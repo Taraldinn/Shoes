@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="/dist/main.css" rel="stylesheet">
+
+
+</head>
+<body>
+ 
+<div class="flex justify-between md:w-[1280px] md:mx-auto mx-5 ">
+    <div>Aldinn..</div>
+    <div class="flex justify-evenly md:block hidden">
+        <a class="p-4" href="#">Home</a>
+        <a class="p-4" href="#">Home</a>
+        <a class="p-4" href="#">Home</a>
+        <a class="p-4" href="#">Home</a>
+    </div>
+    <div x-data="{ show : false }" class="md:hidden block">
+
+        <button x-on:click="show = !show" >
+            toggle
+        </button>
+    
+        <div x-show="show " class="flex flex-col">
+            <a class="p-4" href="#">Home</a>
+            <a class="p-4" href="#">Home</a>
+            <a class="p-4" href="#">Home</a>
+            <a class="p-4" href="#">Home</a>
+    </div>
+</div>
+
+
+
+
+</div>
+</div>
+</body>
+</html>
